@@ -1,0 +1,49 @@
+package com.turbine.test;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class Comment {
+
+	@Id
+	@GeneratedValue
+	private int id;
+	private String comment;
+	@ManyToOne
+	private Student student;
+	public Comment(int id, String comment, Student student) {
+		super();
+		this.id = id;
+		this.comment = comment;
+		this.student = student;
+	}
+	public Comment() {
+		super();
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getComment() {
+		return comment;
+	}
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+	public Student getStudent() {
+		return student;
+	}
+	public void setStudent(Student student) {
+		this.student = student;
+	}
+	
+	
+	
+	
+	
+}

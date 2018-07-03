@@ -1,0 +1,68 @@
+package com.turbine.test;
+
+import java.util.Collection;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Course {
+
+	
+	@Id
+	@GeneratedValue
+	private int id;
+	private String cName;
+	private String cDescription;
+	
+	private Collection<Student> student;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getcName() {
+		return cName;
+	}
+
+	public void setcName(String cName) {
+		this.cName = cName;
+	}
+
+	public String getcDescription() {
+		return cDescription;
+	}
+
+	public void setcDescription(String cDescription) {
+		this.cDescription = cDescription;
+	}
+
+	public Collection<Student> getStudent() {
+		return student;
+	}
+
+	public void setStudent(Collection<Student> student) {
+		this.student = student;
+	}
+
+	public Course(int id, String cName, String cDescription, Collection<Student> student) {
+		super();
+		this.id = id;
+		this.cName = cName;
+		this.cDescription = cDescription;
+		this.student = student;
+	}
+
+	public Course() {
+		super();
+	}
+	
+	
+	
+	
+}

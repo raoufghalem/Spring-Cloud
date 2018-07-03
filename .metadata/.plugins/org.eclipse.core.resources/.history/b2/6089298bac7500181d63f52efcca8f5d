@@ -1,0 +1,80 @@
+package com.turbine.test;
+
+import java.util.Collection;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+
+@Entity
+public class Student extends Person {
+
+//	@Id
+//	@GeneratedValue
+//	private int id;
+	private String name;
+	private String marks;
+	@OneToOne
+	private Adress adress;
+
+	@OneToMany(mappedBy="student")
+	private Collection<Comment> comment;
+	
+//	public int getId() {
+//		return id;
+//	}
+
+	public Collection<Comment> getComment() {
+		return comment;
+	}
+
+	public void setComment(Collection<Comment> comment) {
+		this.comment = comment;
+	}
+
+//	public void setId(int id) {
+//		this.id = id;
+//	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getMarks() {
+		return marks;
+	}
+
+	public void setMarks(String marks) {
+		this.marks = marks;
+	}
+
+	public Adress getAdress() {
+		return adress;
+	}
+
+	public void setAdress(Adress adress) {
+		this.adress = adress;
+	}
+
+	public Student(int id, String name, String marks, Adress adress) {
+		super();
+//		this.id = id;
+		this.name = name;
+		this.marks = marks;
+		this.adress = adress;
+	}
+
+	public Student() {
+		super();
+	}
+	
+	
+	
+	
+}

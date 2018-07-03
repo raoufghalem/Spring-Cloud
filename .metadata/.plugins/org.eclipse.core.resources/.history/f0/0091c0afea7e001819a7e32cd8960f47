@@ -1,0 +1,16 @@
+package com.configServer;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class ConfigServerApplicationTests {
+
+	@Test
+	public void contextLoads() {
+	}
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>Home page</title>
+</head>
+<body>
+	this is result form product instance
+	<br /> Line 2
+</body>
+
+<br />
+<br />
+<div th:if="${result == null}" > <p> please wait while we fix the issue</p></div>
+<div th:unless="${result == null}" >
+ <table>
+      <tr>
+      	<th>Id</th>
+      	<th>Name</th>
+        <th>Desc</th>
+      </tr>
+      <tr th:each="res : ${result}">
+      <td th:text="${res.id}">...</td>
+
+			<td th:text="${res.comment}">...</td>
+
+			<td th:text="${res.productId}">...</td>
+      </tr>
+    </table>
+</div>    
+<div th:if="${products == null}" > <p> please wait while we fix the issue</p></div>
+<div th:unless="${products == null}" >
+     <table>
+      <tr>
+      	<th>Id</th>
+      	<th>Name</th>
+        <th>Desc</th>
+        <th>QT</th>
+      </tr>
+      <tr th:each="res : ${products}">
+      <td th:text="${res.id}">...</td>
+
+			<td th:text="${res.name}">...</td>
+
+			<td th:text="${res.description}">...</td>
+						<td th:text="${res.quantity}">...</td>
+      </tr>
+    </table>
+    </div>
+    
+
+    
+
+</html>

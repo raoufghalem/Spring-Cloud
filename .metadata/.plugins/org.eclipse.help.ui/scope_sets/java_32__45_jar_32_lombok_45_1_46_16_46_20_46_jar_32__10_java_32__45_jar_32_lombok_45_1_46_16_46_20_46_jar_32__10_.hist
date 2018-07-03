@@ -1,0 +1,4 @@
+#Wed Jun 20 00:06:16 EDT 2018
+expression=java -jar lombok-1.16.20.jar \njava -jar lombok-1.16.20.jar \n
+org.eclipse.help.ui.localSearch.master=true
+__DEFAULT__=false

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="frontEnd"/>
+<aop-project name="Turbine"/>
+<aop-project name="eureka-server"/>
+<aop-project name="GateWay"/>
+<aop-project name="frontEndWithFeign"/>
+<aop-project name="hibernateDemo"/>
+<aop-project name="configServer"/>
+<aop-project name="productService"/>
+<aop-project name="review"/>
+<aop-project name="productService2"/>
+</aop-reference-model>
