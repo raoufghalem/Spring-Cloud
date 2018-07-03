@@ -2,12 +2,18 @@
 Full working application as a Distributed system
 
 Architecture: 
+
     ConfigServer
+    
                 Discovery
+                
                          Microservices/applications
                          - All the enterprise Logic 
+                         
                                                    FrontEnd OR API (they all use the same backend services)
                                                    - All Incoming traffic is load ballanced to the backend services
+                                                   
+                                                   
 
 Step 1 : start the Discovery server on port 2000   ---> localhost:2000
          -all application that starts must register to the Discovery server
@@ -29,6 +35,8 @@ Future Additions and improvements:
       -Add a password vault for sensitive config files and password encription
       -Add Spring Security (Oauth2, JWT ...)
       -Add Some metrics and Logging-tracing  services
+      
+      
       
 Long Term:
       -Use SpringBoot 2.0
