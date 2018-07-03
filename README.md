@@ -22,7 +22,8 @@ Step 1 : start the Discovery server on port 2000   ---> localhost:2000
          
 Step 2 : Start the configServer on port 3000  --> localhost:3000
 
-          -this server holds all the config files of the ( microservices/applications/services ) however you wanna call it
+          -this server holds all the config files of the ( microservices/applications/services )
+          however you wanna call it
       
 Step 3 : launch all the services ie. productService, reviewService, ( frontEnd OR  frontEndWithFeign )
 
