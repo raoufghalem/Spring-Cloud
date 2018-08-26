@@ -56,5 +56,5 @@ Long Term:
       
       -Make a parallel project for Reactive programming
       
-      -Use messaging for Logging and metrics
+      -Use messaging for Logging and metrics (started)
       
