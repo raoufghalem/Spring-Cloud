@@ -3,7 +3,7 @@ Full working application as a Distributed system
 
 Architecture: 
 
-    ConfigServer
+    ConfigServer 
     
                 Discovery
                 
